@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #4B4B4B;
+    background-size: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+.page1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.loginpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 900px;
+    height: fit-content;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 900px;
+    height: 500px;
+    font-family: poppins;
+    font-size: 20px;
+    padding-top: 20px;
+}
+#username{
+    width: 850px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+.thebutton{
+    position: relative;
+    width: 850px;
+    height: 60px;
+    background-color: white;
+    cursor:text;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.username{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.closeicon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: none;
+    top: 1px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+.closeicon img{
+    width: 30px;
+    height: 30px;
+}
+.thebutton.clicked{
+    height: 250px;
+    cursor: default;
+}
+.wholeblock{
+    position: relative;
+}
+
+
+.cards{
+    height: 0px;
+    width: 0px;
+    transition: 1s;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+    border-radius: 10px;
+}
+.cards.actual{
+    height: 217.8px;
+    width: 150px;
+    visibility: visible;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 10px;
+}
+.cards img{
+    height: 10px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    visibility: hidden;
+}
+.cards.actual img{
+    height: 217.8px;
+    width: 150px;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards.actual.selected img{
+    height: 217.8px;
+    width: 150px;
+    visibility: visible;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.submit-button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    transition: 500ms ease-in-out;
+}
+.submit-button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 800px){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #4B4B4B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        overflow: hidden;
+    }
+    .page1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+    }
+    .loginpage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 300px;
+        height: fit-content;
+    }
+    .login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 290px;
+        height: fit-content;
+        font-family: poppins;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    #username{
+        width: 200px;
+        height: 30px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+    .thebutton{
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background-color: white;
+        cursor:text;
+        transition: 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .username{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .password{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1, h2{
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+    }
+    h2{
+        margin-top: 20px;
+    }
+    .closeicon{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        display: none;
+        top: 20px;
+        right: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+    .closeicon img{
+        width: 30px;
+        height: 30px;
+    }
+    .thebutton.clicked{
+        background-color: transparent;
+        height: 100px;
+        width: 250px;
+        cursor: default;
+    }
+    .wholeblock{
+        position: relative;
+    }
+    
+    
+    .cards{
+        height: 0px;
+        width: 0px;
+        transition: 1s;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: transparent;
+        border-radius: 10px;
+    }
+    .cards.actual{
+        height: 72.6px;
+        width: 50px;
+        visibility: visible;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: transparent;
+        border-radius: 10px;
+    }
+    .cards img{
+        height: 10px;
+        width: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+        visibility: hidden;
+    }
+    .cards.actual img{
+        height: 72.6px;
+        width: 50px;
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cards.actual.selected img{
+        height: 87.12px;
+        width: 60px;
+        visibility: visible;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 10px;
+        transform: scale(1.1);
+    }
+    
+    .submit-button{
+        width: 70px;
+        height: 25px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: none;
+        transition: 500ms ease-in-out;
+        margin-top: 10px;
+    }
+    .submit-button:hover{
+        background-color: black;
+        color: white;
+    }
+}
